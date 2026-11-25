@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: So3krates-torch
-  version: "0.2.1"
+  version: "0.4.0"
 
 package:
   name: ${{ name | lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/so3krates_torch-${{ version }}.tar.gz
-  sha256: ea51f6cfcc5471370474e964a50c12f4fd4c6871939ca90dd71952f0a37c76d4
+  sha256: 8995934cd4fb6c2fba01fe3e82579b2ec01f60321a3d116e115063cd3f81dbd5
 
 build:
   number: 0
@@ -49,7 +49,7 @@ requirements:
     - jax
     - flax
     - ml-collections
-    - pandas >=1.5.0 
+    - pandas >=1.5.0
 tests:
   - python:
       imports:
